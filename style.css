@@ -8,9 +8,96 @@
     box-sizing: border-box;
 }
 
+section{
+    padding: 100px;
+}
+
 .banner{
     position: relative;
     min-height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.banner h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.banner h1 span{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner h3{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    position: relative;
+    background:rgb(115, 115, 115);
+    color: #fff;
+    margin-top: 20;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color:#fff;
+    font-size: 20px;
+    /* I want an elegant logo here*/
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
 }
