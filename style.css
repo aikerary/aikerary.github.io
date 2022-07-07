@@ -75,6 +75,14 @@ header{
     transition: 0.4s;
 }
 
+.banner a{
+    transition: .5s;
+}
+
+.banner a:hover{
+    padding: 20px;
+}
+
 header.sticky{
     background: #fff;
     padding: 20px 100px;
@@ -290,4 +298,10 @@ footer .contentBox{
     color: #fff;
     margin: auto;
     padding-top: 20px;
+}
+
+.btn:hover{
+    background: #fff;
+    color: #111;
+    cursor: pointer;
 }
