@@ -9,17 +9,16 @@
     <!-- A basic header -->
     <header>
         <a href="#" class="logo">
-            Proyecto de web
             <figure>
-                <img src="img/logo.png"/>
+                <i class="fa-solid fa-spider"></i>
             </figure>
         </a>
         <nav class="toogle">
             <ul>
-                <li><a href="#">Página principal</a></li>
                 <li><a href="#">Primer punto</a></li>
-                <li><a href="#">Segundo punto</a></li>
-                <li><a href="#">Tercer punto</a></li>
+                <li><a href="#second">Segundo punto</a></li>
+                <li><a href="#">Taller Pseint</a></li>
+                <li><a href="#">Taller Java</a></li>
             </ul>
         </nav>
     </header>
@@ -30,30 +29,37 @@
             <a href="#" class="btn">¡Hey clickéame!</a>
         </div>
     </section>
-    <section class="second">
+    <section class="second" id="second">
         <div class="heading">
             <h2>Segundo punto</h2>
         </div>
         <div class="content">
             <div class="contentBox">
-                <h3>Aquí irá una descripción del segundo punto</h3>
+                <h3>Instrucciones de usuario</h3>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, ea nesciunt. Perspiciatis sint provident necessitatibus nihil recusandae laboriosam quaerat, dolor rem praesentium odio voluptates minus nesciunt atque reiciendis consectetur culpa!
+                    Utilice el botón de tema ubicado en este sitio para cambiar el tema de la página.
+                    Y mostrar el cambio de color en las frutas.
                 </p>
-                <ol>
-                    <li class="odd"><i class="fa-solid fa-lemon"></i></li>
-                    <li class="even"><i class="fa-solid fa-apple-whole"></i></li>
-                    <li class="odd"><i class="fa-solid fa-pepper-hot"></i></li>
-                    <li class="even"><i class="fa-solid fa-leaf"></i></li>
-                    <li class="odd"><i class="fa-solid fa-seedling"></i></li>
-                    <li class="even"><i class="fa-solid fa-bacon"></i></li>
-                    <li class="odd"><i class="fa-solid fa-wheat-awn"></i></li>
-                    <li class="even"><i class="fa-solid fa-cookie"></i></li>
-                    <li class="odd"><i class="fa-solid fa-pizza-slice"></i></li>
-                    <li class="even"><i class="fa-solid fa-egg"></i></li>
-                </ol>
             </div>
-        </div>
+            <div class="contentBox exercise2">
+                <ol class="fruits">
+                    <li><i class="fa-solid fa-lemon"></i></li>
+                    <li><i class="fa-solid fa-apple-whole"></i></li>
+                    <li><i class="fa-solid fa-pepper-hot"></i></li>
+                    <li><i class="fa-solid fa-leaf"></i></li>
+                    <li><i class="fa-solid fa-seedling"></i></li>
+                    <li><i class="fa-solid fa-bacon"></i></li>
+                    <li><i class="fa-solid fa-wheat-awn"></i></li>
+                    <li><i class="fa-solid fa-cookie"></i></li>
+                    <li><i class="fa-solid fa-pizza-slice"></i></li>
+                    <li><i class="fa-solid fa-egg"></i></li>
+                </ol>
+                <div class="aligncenter">
+                    <button class="switch" id="switch">
+                        <i class="fa-solid fa-fill-drip"></i>
+                    </button>
+                </div>
+            </div>
         <div>
 
         </div>
@@ -106,5 +112,7 @@
             </p>
         </article>
     </section> -->
+    <script src="js/scroll.js"></script>
+    <script src="js/themes.js"></script>
 </body>
 </html>

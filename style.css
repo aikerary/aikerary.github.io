@@ -72,16 +72,32 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.4s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);  
 }
 
 header .logo{
     color:#fff;
-    font-size: 20px;
+    font-size: 80px;
     /* I want an elegant logo here*/
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    transition: .5s;
+}
+
+header.sticky .logo{
+    color: #000;
+}
+
+header .logo:hover{
+    font-size: 100px;
 }
 
 header ul{
@@ -100,4 +116,85 @@ header ul li a{
     margin: 0px 15px;
     text-decoration: none;
     color: #fff;
+}
+
+header.sticky ul li a{
+    color: #000;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color:#111;
+}
+
+.heading h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentBox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.fruits{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.fruits li{
+    position: relative;
+    font-size: 40px;
+    padding: 10px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.fruits li:hover{
+    transform: translateY(-20px);
+}
+
+body.specialeven .fruits li:nth-child(even){
+    color: blue;
+}
+
+body.specialodd .fruits li:nth-child(odd){
+    color: blue;
+}
+
+.aligncenter{
+    transform: translateX(250px);
+}
+
+.switch{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 50px;
+    transition: .5s;
+    outline: none;
+}
+
+.switch:hover{
+    color: darkblue;
+    font-size: 90px;
 }
