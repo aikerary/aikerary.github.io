@@ -84,7 +84,6 @@ header.sticky{
 header .logo{
     color:#fff;
     font-size: 80px;
-    /* I want an elegant logo here*/
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -177,7 +176,7 @@ body.specialodd .fruits li:nth-child(odd){
 }
 
 .aligncenter{
-    transform: translateX(250px);
+    float: right;
 }
 
 .switch{
@@ -197,4 +196,98 @@ body.specialodd .fruits li:nth-child(odd){
 .switch:hover{
     color: darkblue;
     font-size: 90px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #111;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Popins", sans-serif;
+}
+
+footer h3{
+    text-align: left;
+}
+
+footer .contentBox{
+    text-align: left;
+}
+
+footer .heading{
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .contentBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formBox{
+    min-width: 60%;
+}
+
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox form h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.formBox form input,
+.formBox form textarea,
+.formBox form button
+{
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+
+}
+
+.formBox form textarea{
+    min-height: 200px;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder{
+    color: #999;
+}
+
+.formBox form input[type="submit"]{
+    max-width: 100px;
+    background: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: .7s;
+}
+
+.formBox form input[type="submit"]:hover{
+    padding: 100px;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    padding-top: 20px;
 }

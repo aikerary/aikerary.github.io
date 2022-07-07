@@ -61,9 +61,49 @@
                 </div>
             </div>
         <div>
-
         </div>
     </section>
+    <footer class="first">
+        <div class="heading">
+            <h2>Primer punto</h2>
+        </div>
+        <div class="contentBox">
+            <div class="contact">
+                <h3>Instrucciones de usuario</h3>
+                <div class="contactBox">
+                    <div class="box">
+                        <p>
+                            Utilice el formulario que tendrá a su disposición
+                            <br>para enviar un mensaje.
+                            <br>Recuerde, es vital no dejar ningún campo vacío.
+                            <br>Para ayudarle, en caso de dejar un campo vacío, se mostrará una alerta
+                            <br>justo debajo del formulario en donde 
+                            <br>se encuentra una lista de errores cometidos durante el llenado.
+                            <br>Además, una vez hecho esto, el formulario se enviará automáticamente.
+                            <br>Se abrirá una página de prueba, y en la página principal se podrá abrir la
+                            <br>consola para ver los datos impresos, además de que estos también aparecerán
+                            <br>en la parte de abajo del formulario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <div class="formBox">
+            <form id="datos" method="post" action="/formulario" target="_blank">
+                <h3>Envío de mensaje</h3>
+                <input value="" type="text" name="Nombre" id="name" placeholder="Nombre completo"/>
+                <input value="" type="email" name="Email" id="email" placeholder="Correo electrónico"/>
+                <input value="" type="text" name="Asunto" id="subject" placeholder="Asunto de mensaje"/>
+                <textarea placeholder="Mensaje" id="message"></textarea>
+                <div class="button-container">
+                    <button class="btn" type="submit">Enviar</button>
+                    <button class= "btn" type="reset" id="resetBtn">Resetear</button>
+                </div>
+                <p class="warnings" id="warnings"></p>
+            </form>
+        </div>   
+        </div>
+    </footer>
+    </script>
     <!-- <section>
         <article>
             <h2>Article 1</h2>
@@ -114,5 +154,6 @@
     </section> -->
     <script src="js/scroll.js"></script>
     <script src="js/themes.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
