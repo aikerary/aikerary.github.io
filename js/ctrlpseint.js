@@ -2,7 +2,6 @@ const varpseint= document.getElementById('varpseint');
 const condpseint= document.getElementById('condpseint');
 const cicpseint= document.getElementById('cicpseint');
 const arrpseint= document.getElementById('arrpseint');
-const navigator=document.getElementById('navworks');
 const firstbtn=document.getElementById('firstbtn');
 const secondbtn=document.getElementById('secondbtn');
 const thirdbtn=document.getElementById('thirdbtn');

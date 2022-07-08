@@ -313,7 +313,8 @@ footer .contentBox{
     font-size: x-large;
 }
 
-.pseint{
+.pseint,
+.java{
     background: #111;
     color: #fff;
 }
@@ -440,7 +441,8 @@ footer .contentBox{
     transform: translateX(calc(70px * 3));
 }
 
-.pseint h2{
+.pseint h2,
+.java h2{
     color: #fff;
 }
 .gist {width:500px !important;}
