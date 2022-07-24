@@ -1,5 +1,6 @@
-const btnSwitch=document.querySelector('#switch');
-btnSwitch.addEventListener('click',function(){
+window.addEventListener('load', function () {
+    const btnSwitch=document.querySelector('#switch');
+    btnSwitch.addEventListener('click',function(){
     if (document.body.classList.contains('specialeven')){
         document.body.classList.remove('specialeven');
         document.body.classList.add('specialodd');
@@ -8,4 +9,5 @@ btnSwitch.addEventListener('click',function(){
     }else{
         document.body.classList.add('specialeven');
     }
+});
 });
